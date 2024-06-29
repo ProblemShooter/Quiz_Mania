@@ -83,3 +83,10 @@ body,html {
     color: rgb(255, 255, 255); 
     background-color: #002f7b;
 }
+
+.correct {
+    background-color: #9ae19a;
+}
+.incorrect {
+    background-color: #ff9393;
+}
