@@ -31,3 +31,55 @@ body,html {
     padding: 20px 0;
     color: #001e4d;
 }
+
+
+.quiz h2{
+    font-size: 21px;
+    color: #001e4d;
+    font-weight: 600;
+}
+
+.btn {
+    font-size: 17px;
+    color: #222;
+    background-color: #fff;
+    width: 100%;
+    border: 2px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]){
+    color: white;
+    background-color: black;
+   transform: scaleY(0.98);
+   /* border-radius: 23px; */
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn {
+    color: white;
+    background-color: #001e4d;
+    width: 130px;
+    padding: 7px;
+    font-weight: 500;
+    font-size:12px ;
+    margin: 20px auto 0;
+    cursor: pointer;
+    display: none;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#next-btn:hover {
+    color: rgb(255, 255, 255); 
+    background-color: #002f7b;
+}
