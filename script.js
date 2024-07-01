@@ -96,3 +96,33 @@ Array.from(answerButtons.children).forEach(button => {
 nextButton.style.display = "block"
 }
 
+
+
+function showScore() {
+    resetstate();
+    questionElement.innerHTML = `You scored ${score} out of the ${questions.length}!`;
+    nextButton.innerHTML = "Play Again 🔥"
+    nextButton.style.display = "block"
+}
+
+function handleNextQuestion() {
+    currentQuestionIndex++;
+    if(currentQuestionIndex < questions.length){
+        showQuestions();
+    }   else {
+        showScore();
+    }
+}
+
+nextButton.addEventListener("click", () =>{
+    if(currentQuestionIndex < questions.length) {
+        handleNextQuestion();
+    }
+    else {
+        startQuiz();
+    }
+})
+
+startQuiz();
+
+//? js file done .
